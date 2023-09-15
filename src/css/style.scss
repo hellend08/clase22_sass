@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #E6E6E6;
+    height: 188.19px;
+    padding: 1rem 0 0;
+
+    .logo {
+        display: block;
+        margin-inline: auto;
+    }
+}
+
+.title {
+    height: 60px;
+    background-color: #C4C4C4;
+    display: flex;
+
+    h1 {
+        font-weight: 700;
+        color: #005677;
+        text-transform: uppercase;
+        background-color: #C4C4C4;
+        letter-spacing: 5px;
+        margin: auto;
+        font-size: 35px;
+    }
+}
+
+.secciones {
+    padding-block: 8rem;
+
+    section {
+        height: 140px;
+
+        h2 {
+            font-weight: 700;
+            color: #005677;
+            text-transform: uppercase;
+            background-color: #C4C4C4;
+            letter-spacing: 5px;
+            font-size: 20px;
+            padding-block: 4px;
+            padding-left: 16px;
+        }
+
+        ul.italic {
+            padding: 1.2rem 0 0 2.3rem;
+
+            li {
+                font-size: 15px;
+                // list-style: none;
+
+                span {
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        dl {
+            padding-top: 1.2rem;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+
+            dt {
+                font-size: 15px;
+                grid-column: 1/2;
+                text-align: end;
+                font-weight: 700;
+                line-height: 16.68px;
+            }
+
+            dd {
+                font-size: 15px;
+                grid-column: 2/5;
+                line-height: 16.68px;
+            }
+
+            &.last-section dd {
+                grid-column: 2/8;
+            }
+        }
+    }
+}
+
+footer {
+    height: 37px;
+    background-color: #005677;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 20px;
+        font-weight: 700;
+        padding-right: 12px;
+        color: #FFFFFF;
+    }
+
+    img {
+        padding-inline: 12px;
+    }
+}
+
